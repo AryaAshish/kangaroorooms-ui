@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_first_run_one"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aryan.android.oyo.FirstRunOneActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_color_1"
+
+    >
+
+    <TextView
+        android:id="@+id/oyo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Kangaroo rooms"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+<!--
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/oyo"
+        android:id="@+id/scene_root">
+             <include layout="@layout/a_scene" />
+    </FrameLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scene_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/oyo"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/free_wifi_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+        <TextView
+            android:id="@+id/free_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_c
+            android:fontFamily="monospace"
+            android:text="Free Wi-Fi" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ac_rooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/free_wifi_layout"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:fontFamily="monospace"
+            android:text="AC Rooms"/>
+    </RelativeLayout>
+-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:fontFamily="monospace"
+        android:textSize="15dp"
+        android:text="Get 500 kangaroo credits on sign up "
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/get_started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="getStarted"
+        android:text="GET STARTED          "
+        android:textColor="#E53935"
+        android:textSize="15sp"
+        android:background="@drawable/button_background"
+        android:paddingRight="40sp"
+        android:paddingLeft="40sp"
+        android:visibility="gone" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <!--<FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+
+
+        <ImageView
+            android:src="@drawable/cities_recycler_view_item_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/city_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="25dp"/>
+
+    </FrameLayout>-->
+    <!--<android.support.v7.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="12dp"
+        android:id="@+id/view2"
+        app:cardCornerRadius="40dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9">
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:id="@+id/city_img"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+        </ImageView>
+    </android.support.v7.widget.CardView>-->
+    <ImageView
+        android:id="@+id/city_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/cities_recycler_view_item_background"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#757575"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+</LinearLayout>

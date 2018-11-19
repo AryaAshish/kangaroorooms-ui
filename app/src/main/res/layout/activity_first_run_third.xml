@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="false"
+    android:orientation="vertical">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/first_run_third_activity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.aryan.android.oyo.FirstRunThirdActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        android:elevation="1dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Create Account"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Email"
+        android:textSize="12sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:drawablePadding="20dp"
+        android:background="@drawable/linear_layout_in_activity_first_run_second_background"/>
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Name"
+        android:textSize="12sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="20dp"
+        android:background="@drawable/linear_layout_in_activity_first_run_second_background"/>
+
+    <TextView
+        android:id="@+id/text_view_referral_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E53935"
+        android:textSize="15sp"
+        android:text="Have a referral code?"
+        android:onClick="openReferralCodeEditText"/>
+
+    <EditText
+        android:id="@+id/edit_text_referral_code"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Referral code"
+        android:textSize="12sp"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:drawablePadding="20dp"
+        android:visibility="gone"
+        android:background="@drawable/linear_layout_in_activity_first_run_second_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/six_digit_linear_layout_background">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/create_account_edit_background">
+            <TextView
+                android:id="@+id/msg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="14dp"
+                android:text="We have sent a &#8220;6 digit Code&#8221;"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/registered_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="14dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@id/msg1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Edit"
+                android:textSize="15sp"
+                android:textColor="#E53935"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="4dp"
+                android:layout_toRightOf="@id/msg1"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/msg1"
+                android:onClick="editPhoneNumber"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="12sp"/>
+        <EditText
+            android:id="@+id/edit_text_6_digit_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:hint="Enter 6 digit code"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:inputType="number"
+            android:background="@drawable/enter_code_background"/>
+        <TextView
+            android:id="@+id/resend_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend Code"
+            android:textSize="12sp"
+            android:textColor="#FFCDD2"
+            android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE ACCOUNT"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="createAccount"/>
+
+    <TextView
+        android:id="@+id/text_view_agree_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="40sp"/>
+
+</LinearLayout>
+
+</ScrollView>

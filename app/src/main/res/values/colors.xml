@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="errorSnackBarColor">#F48FB1</color>
+    <color name="endColor">#E53935</color>
+    <color name="allow_deny_alert">#00897B</color>
+    <color name="half_white">#FAFAFA</color>
+    <color name="shade_red1">#E53935</color>
+    <color name="deny_alert_bakground">#DD000000</color>
+</resources>

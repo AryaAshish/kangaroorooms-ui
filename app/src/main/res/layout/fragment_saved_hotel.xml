@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    tools:context=".SavedHotelFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Your Saved Rooms"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="53sp"
+        android:background="#e5e5e5"/>
+    <ImageView
+        android:id="@+id/img_saved_hotel"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/saved_hotel"/>
+
+    <TextView
+        android:id="@+id/saved_hotel_fragment_txt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="It's time to find your favorite rooms!"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/img_saved_hotel"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp" />
+
+    <LinearLayout
+        android:id="@+id/click_on_heart_icon_txt_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/saved_hotel_fragment_txt_1">
+        <TextView
+            android:id="@+id/saved_hotel_fragment_txt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click on the "
+            android:drawablePadding="2dp"
+            android:gravity="bottom"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:baselineAlignBottom="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" icon"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/saved_hotel_fragment_txt_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/click_on_heart_icon_txt_view"
+        android:text="to bookmark or save any room"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/saved_hotel_fragment_txt_3"
+        android:layout_marginTop="30sp"
+        android:text="START BROWSING KANGAROO ROOMs"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:paddingLeft="45sp"
+        android:paddingRight="45sp"
+        android:paddingBottom="3sp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#4CAF50"
+        android:layout_centerHorizontal="true"
+        android:onClick="showSearchActivity"/>
+
+
+</RelativeLayout>

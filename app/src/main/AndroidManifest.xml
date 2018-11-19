@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aryan.android.oyo">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo1"
+        android:label="KANGAROO ROOMS"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/oyo_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity
+            android:name="com.aryan.android.oyo.MainActivity"
+            android:theme="@style/noAnimTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aryan.android.oyo.FirstRunOneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FirstRumTheme" />
+        <activity
+            android:name="com.aryan.android.oyo.FirstRunSecondActivity"
+            android:label=" "
+            android:parentActivityName="com.aryan.android.oyo.FirstRunOneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FirstRumTheme" />
+        <activity
+            android:name="com.aryan.android.oyo.FirstRunThirdActivity"
+            android:label=" "
+            android:parentActivityName="com.aryan.android.oyo.FirstRunSecondActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FirstRumTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.aryan.android.oyo.FirstActivity"
+            android:theme="@style/FirstRumTheme" />
+        <activity
+            android:name="com.aryan.android.oyo.SearchActivity1"
+            android:theme="@style/FirstRumTheme" />
+        <activity
+            android:name="com.aryan.android.oyo.SetDatesActivity"
+            android:theme="@style/FirstRumTheme" />
+        <activity
+            android:name="com.aryan.android.oyo.HotelsActivity"
+            android:theme="@style/FirstRumTheme" />
+        <activity
+            android:name="com.aryan.android.oyo.HotelActivity"
+            android:theme="@style/FirstRumTheme" />
+        <activity android:name="com.aryan.android.oyo.HotelActivity_1"
+            android:theme="@style/FirstRumTheme1"></activity>
+    </application>
+
+</manifest>

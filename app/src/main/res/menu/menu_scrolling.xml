@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.journaldev.collapsingtoolbarlayout.ScrollingActivity">
+    <item
+        android:id="@+id/home_menu_item"
+        android:orderInCategory="100"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:iconTint="@drawable/menu_item"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/saved_hotel_menu_item"
+        android:orderInCategory="200"
+        android:title="Saved Hotel"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/bookings_menu_item"
+        android:orderInCategory="300"
+        android:title="Bookings"
+        android:icon="@drawable/ic_work_black_24dp"/>
+
+    <item
+        android:id="@+id/you_menu_item"
+        android:orderInCategory="400"
+        android:title="You"
+        android:icon="@drawable/ic_person_black_24dp" />
+
+</menu>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aryan.android.oyo.SetDatesActivity">
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#fff"/>
+    <LinearLayout
+        android:id="@+id/indications"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fff">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHECK IN"
+            android:textSize="10sp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHECK OUT"
+            android:textSize="10sp"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 ROOM"
+            android:textSize="10sp"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/indications"
+        android:background="#fff"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHECK IN"
+            android:layout_marginBottom="5dp">
+        </android.support.design.widget.TabItem>
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHECK OUT"
+            android:layout_marginBottom="5dp">
+        </android.support.design.widget.TabItem>
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Adult"
+            android:layout_marginBottom="5dp">
+        </android.support.design.widget.TabItem>
+    </android.support.design.widget.TabLayout>
+
+    <LinearLayout
+        android:id="@+id/apply_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APPLY"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="#53cf10"
+            android:onClick="Apply"
+            />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        android:layout_above="@id/apply_layout"/>
+
+
+</RelativeLayout>
