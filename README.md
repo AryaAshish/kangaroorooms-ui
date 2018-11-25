@@ -30,7 +30,7 @@ Before you begin, you should have already downloaded the Android Studio SDK and 
 
 3. Open Android Studio, you will see a **Welcome to Android** window. Under Quick Start, select *Import Project (Eclipse ADT, Gradle, etc.)*
 
-4. Navigate to the directory where you saved the KangarooRoom-UI project, select the root folder of the project (the folder named "Bolt-connect-android"), and hit OK. Android Studio should now begin building the project with Gradle.
+4. Navigate to the directory where you saved the KangarooRoom-UI project, select the root folder of the project (the folder named "KangarooRooms"), and hit OK. Android Studio should now begin building the project with Gradle.
 
 5. Once this process is complete and Android Studio opens, check the Console for any build errors.
 
@@ -42,9 +42,4 @@ Before you begin, you should have already downloaded the Android Studio SDK and 
 
 8. If the app was built successfully, you can test it by running it on either a real device or an emulated one by going to *Run > Run 'app'* or pressing the Run icon in the toolbar.
 
-## How to use
-First Install the App
-Once you open the app you will get a screen like this
-<br>
-<img width="200px" height="300px" align="center" src="/Screenshot_2018-11-25-11-27-26-754_com.medeveloper.ayaz.boltconnect.png"/><br>
-<p>Just type your Bolt Device Id and API key in the box and Hit submit.</p>
+## How to contribute
