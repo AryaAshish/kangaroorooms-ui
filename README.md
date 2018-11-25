@@ -43,3 +43,8 @@ Before you begin, you should have already downloaded the Android Studio SDK and 
 8. If the app was built successfully, you can test it by running it on either a real device or an emulated one by going to *Run > Run 'app'* or pressing the Run icon in the toolbar.
 
 ## How to contribute
+1. Clone and download as mentioned above.
+2. Do changes and commit to local branch.
+3. *Always create pull request to the development brach*
+4. Try to match the coding style
+   
