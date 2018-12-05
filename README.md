@@ -2,7 +2,7 @@
 ## Overview
 A web and app portal who provides easy lodging options in Udaipur like flats on rent for bachelors & group, 
 family flats on rent in Udaipur. This application is currently in development and will have the various feature
-of hospitality.
+of hospitality,WILL BE RELEASED IN THE END OF DECEMBER.
   
 ## Screenshots
 <table>
