@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "759809959788",
+    "firebase_url": "https://kangaroorooms-b389f.firebaseio.com",
+    "project_id": "kangaroorooms-b389f",
+    "storage_bucket": "kangaroorooms-b389f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759809959788:android:0938ede9de02eafa",
+        "android_client_info": {
+          "package_name": "com.aryan.android.oyo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759809959788-q66ap7hg2ajt7a9cj0mcn0u79l232jfa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aryan.android.oyo",
+            "certificate_hash": "6addc45b762ec8f30f8bed86a676edac134901ca"
+          }
+        },
+        {
+          "client_id": "759809959788-81mk5limiiicd2bmi3pnsu39jd2cmcju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS3EgglDxs-lHdmUY2UjBEj17rAv2_ggw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759809959788-81mk5limiiicd2bmi3pnsu39jd2cmcju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
