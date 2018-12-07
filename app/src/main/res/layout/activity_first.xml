@@ -16,6 +16,10 @@
         android:animateLayoutChanges="true">
 
     </FrameLayout>
+    <!--region Description-->
+    End of frame layout
+    <!--endregion-->
+
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomnav"
         android:layout_width="match_parent"
