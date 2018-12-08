@@ -39,4 +39,10 @@ dependencies {
     compile 'com.github.mancj:SlideUp-Android:1.0-beta'
     testCompile 'junit:junit:4.12'
     compile project(':library')
+
+    //Loading Image
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //Circular Images
+    compile 'com.github.abdularis:CircularImageView:v1.2'
 }

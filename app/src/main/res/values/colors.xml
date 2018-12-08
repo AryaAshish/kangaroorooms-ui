@@ -9,4 +9,6 @@
     <color name="half_white">#FAFAFA</color>
     <color name="shade_red1">#E53935</color>
     <color name="deny_alert_bakground">#DD000000</color>
+    <color name="startblue">#4bb6ef</color>
+    <color name="endblue">#FFFFFF</color>
 </resources>

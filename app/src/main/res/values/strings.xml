@@ -1,4 +1,15 @@
 <resources>
+
+    <string name="email">Email_id</string>
+    <string name="name">Full Name</string>
+    <string name="mobile_number">+919876543210</string>
+    <string name="aadhar_number">5457 1421 5421</string>
+    <string name="address">51-Bakers Street London England</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">LOGOUT</string>
+    <string name="todo">TODO</string>
+
+
     <string name="app_name">KANGAROO ROOMS</string>
     <string name="verify_info_1">A 6-Digit Verification Code will be sent via SMS\n
     to verify your mobile number</string>

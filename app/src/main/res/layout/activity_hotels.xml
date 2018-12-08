@@ -22,8 +22,7 @@
             android:textColor="#000000"
             android:textStyle="bold"
             android:background="@android:color/transparent"
-            android:textSize="15sp"
-            />
+            android:textSize="15sp" />
     </android.support.v7.widget.Toolbar>
 
     <android.support.v7.widget.RecyclerView

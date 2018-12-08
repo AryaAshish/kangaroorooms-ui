@@ -1,6 +1,7 @@
 package com.aryan.android.oyo;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.annotation.Nullable;
@@ -10,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -18,6 +20,7 @@ import android.widget.TextView;
 public class YouFragment extends Fragment {
 
 
+    private TextView openProfile;
     private TextView mTitleTextView;
 
     public static YouFragment newInstance() {
@@ -25,6 +28,8 @@ public class YouFragment extends Fragment {
         YouFragment fragment = new YouFragment();
         return fragment;
     }
+
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,9 +52,20 @@ public class YouFragment extends Fragment {
             ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
+        //open profile
+        openProfile = (TextView) view.findViewById(R.id.profile);
+        openProfile.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(YouFragment.this.getActivity(),user_profile.class);
+                startActivity(i);
+            }
+        });
         mTitleTextView = view.findViewById(R.id.you_title);
         mTitleTextView.setText(HomeFragment.mwelcomeMessageTxtView.getText());
         return view;
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -63,5 +79,9 @@ public class YouFragment extends Fragment {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+
+
+
 
 }

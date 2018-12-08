@@ -21,7 +21,6 @@
         android:textColor="#FFFFFF"
         android:fontFamily="monospace"
         android:drawablePadding="10dp"
-        android:background="@drawable/profilegradientbackground"
         />
 
 </RelativeLayout>
