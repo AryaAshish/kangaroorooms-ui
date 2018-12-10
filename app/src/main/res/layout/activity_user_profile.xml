@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -32,7 +33,7 @@
                     android:layout_width="100dp"
                     android:layout_height="170dp"
                     android:id="@+id/imgView"
-                    android:src="@drawable/icon_aadharnumber"
+                    app:srcCompat="@drawable/icon_aadharnumber"
                     app:highlightColor="#80fb1743"
                     app:strokeColor="@color/colorAccent"
                     app:strokeWidth="2px" />
@@ -163,16 +164,7 @@
                 android:layout_margin="5dp"
                 android:paddingStart="20dp">
 
-                <Button
-                    android:id="@+id/logout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_margin="15dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/profile_button"
-                    android:text="@string/logout"
-                    android:textColor="#fff" />
+
                 <Button
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
